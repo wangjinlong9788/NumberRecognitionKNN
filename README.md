@@ -5,6 +5,10 @@ Use the K-Nearest Neighbour classifier to classify image of number
 # Requirement to run
 python3.5.2 
 opencv3.2
+
+Install OpenCV command in conda:
+
+pip install opencv-python
 # Basic of k-nearest neighbors(KNN)  algorithm
 ![image](https://github.com/wangjinlong9788/NumberRecognitionKNN/blob/master/279px-KnnClassification.svg.png)
 

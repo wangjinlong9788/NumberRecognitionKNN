@@ -61,4 +61,5 @@ print( "distance:  {}\n".format(dist) )
 plt.show()
 
 The result of the example code is:
+
 ![image](https://github.com/wangjinlong9788/NumberRecognitionKNN/blob/master/cvresult.png)

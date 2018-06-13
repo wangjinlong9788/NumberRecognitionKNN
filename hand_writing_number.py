@@ -34,3 +34,4 @@ matches = result == test_labels
 correct = np.count_nonzero(matches)
 accuracy = correct*100.0 / result.size
 print(accuracy)
+#source: csdn

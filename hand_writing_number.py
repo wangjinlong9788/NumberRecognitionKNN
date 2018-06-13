@@ -19,7 +19,11 @@ test = x[:,50:100].reshape(-1,400).astype(np.float32)
 k = np.arange(10)
 train_labels = np.repeat(k,250)[:,np.newaxis]
 test_labels = train_labels.copy()
-
+np.savez('data.npz',train=train, train_labels=train_labels)
+with np.load('data.npz') as data:
+    print data.files
+    train = data['train']
+    train_labels = data['train_labels']
 #create a K-Nearest Neighbour classifer and train data then test  
 knn = cv2.ml.KNearest_create()
 knn.train(train,cv2.ml.ROW_SAMPLE,train_labels)
